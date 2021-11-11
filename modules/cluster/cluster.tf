@@ -25,9 +25,9 @@ resource "azurerm_kubernetes_cluster" "aks-getting-started" {
 
   linux_profile {
     admin_username = "azureuser"
-    ssh_key {
-        key_data = var.ssh_key
-    }
+    #ssh_key {
+    #    key_data = var.ssh_key
+    #}
   }
 
   network_profile {
